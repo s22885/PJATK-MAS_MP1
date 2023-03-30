@@ -9,6 +9,8 @@ class Alarm implements Serializable {
 
     private final ISensor alarmInfo;
 
+    private static final String OWNER = "SUS";
+
     public Alarm(ISensor alarmInfo) {
         this.alarmInfo = alarmInfo;
         addMySelf();
